@@ -16,7 +16,7 @@ public class HomePageSteps {
 	@Given("user is on home page")
 	public void user_is_on_home_page() {
 		String actualPageURL = homePage.validatePageURL();
-		String expectedPageURL = "http://practice.automationtesting.in/";
+		String expectedPageURL = "https://practice.automationtesting.in/";
 		Assert.assertEquals(expectedPageURL, actualPageURL);
 	}
 
