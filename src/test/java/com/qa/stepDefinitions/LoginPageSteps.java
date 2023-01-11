@@ -17,7 +17,7 @@ public class LoginPageSteps {
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
 		String actualPageURL = loginPage.validatePageURL();
-		String expectedPageURL = "http://practice.automationtesting.in/my-account/";
+		String expectedPageURL = "https://practice.automationtesting.in/my-account/";
 		Assert.assertEquals(expectedPageURL, actualPageURL);
 	}
 
@@ -65,7 +65,7 @@ public class LoginPageSteps {
 	@Then("It should show the validation message for valid password")
 	public void it_should_show_the_validation_message_for_valid_password() {
 		String actualErrorMsg = loginPage.validateErrorMsg();
-		String expectedErrorMsg = "ERROR: The password you entered for the username GTERZTBZJP@gmail.com is incorrect. Lost your password?";
+		String expectedErrorMsg = "Error: the password you entered for the username GTERZTBZJP@gmail.com is incorrect. Lost your password?";
 		Assert.assertEquals(expectedErrorMsg, actualErrorMsg);
 	}
 

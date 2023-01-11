@@ -34,9 +34,9 @@ public class HomePageSteps {
 
 	@Then("login page should be displayed")
 	public void login_page_should_be_displayed() {
-		String title = loginPage.validatePageTitle();
-		String actual = "My Account – Automation Practice Site";
-		Assert.assertEquals(actual, title);
+		String actualPageTitle = loginPage.validatePageTitle();
+		String expectedPageTitle = "My Account – Automation Practice Site";
+		Assert.assertEquals(expectedPageTitle, actualPageTitle);
 	}
 
 }
