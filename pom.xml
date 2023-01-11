@@ -3,21 +3,12 @@
 	<groupId>cucumberPOM</groupId>
 	<artifactId>CucumberFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<properties>
-		<cucumber.version>7.9.0</cucumber.version>
-		<selenium.version>4.7.2</selenium.version>
-		<webdrivermanager.version>5.3.1</webdrivermanager.version>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.compiler.plugin.version>3.10.1</maven.compiler.plugin.version>
-		<maven.surefire.plugin.version>3.0.0-M7</maven.surefire.plugin.version>
-	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>${cucumber.version}</version>
+			<version>7.2.3</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
@@ -30,20 +21,20 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>${cucumber.version}</version>
+			<version>7.2.3</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>${selenium.version}</version>
+			<version>4.1.3</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>${webdrivermanager.version}</version>
+			<version>5.1.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
 		<dependency>
@@ -51,30 +42,23 @@
 			<artifactId>extentreports-cucumber7-adapter</artifactId>
 			<version>1.3.2</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/info.cukes/gherkin -->
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>gherkin</artifactId>
-			<version>2.12.2</version>
-			<scope>provided</scope>
-		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${maven.compiler.plugin.version}</version>
+				<version>3.10.1</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
-					<source>${maven.compiler.source.version}</source>
-					<target>${maven.compiler.target.version}</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>${maven.surefire.plugin.version}</version>
+				<version>3.0.0-M5</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
