@@ -28,8 +28,9 @@ public class HomePageSteps {
 	}
 
 	@When("user clicks on my account link")
-	public void user_clicks_on_my_account_link() {
+	public void user_clicks_on_my_account_link() throws InterruptedException {
 		homePage.clickMyAccount();
+		Thread.sleep(2000);
 	}
 
 	@Then("login page should be displayed")
